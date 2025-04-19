@@ -39,7 +39,8 @@ This project demonstrates the fundamental concepts of a blockchain system includ
 ### 1. Clone the Repository
 ***bash***
 
-git clone https://github.com/your-username/mini-blockchain-simulator.git
+git clone https://github.com/lil-chips/mini-blockchain-simulator.git
+
 cd mini-blockchain-simulator
 
 ---
