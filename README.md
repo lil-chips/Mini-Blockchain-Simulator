@@ -1,4 +1,4 @@
-# mini-blockchain-simulator
+# Mini-blockchain-simulator
 
 # 🧱 Mini Blockchain Simulator
 
