@@ -42,10 +42,12 @@ This project demonstrates the fundamental concepts of a blockchain system includ
 git clone https://github.com/your-username/mini-blockchain-simulator.git
 cd mini-blockchain-simulator
 
-**Install Dependencies**
+### 2. Install Dependencies
+```bash
 pip install ecdsa
 
-**Run the Project**
+### 3. Run the Project
+```bash
 python mini-blockchain-simulator.py
 
 
