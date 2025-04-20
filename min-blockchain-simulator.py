@@ -4,7 +4,7 @@ import time
 import threading
 import random
 from ecdsa import SigningKey, VerifyingKey, NIST384p
-from datetime import datetime  # Import datetime module for formatted date
+from datetime import datetime  # Import datetime module for formatted date and time
 
 # -------- Block Structure --------
 class Block:
@@ -38,13 +38,13 @@ def verify_transaction(transaction, signature, vk):
 
 # -------- Blockchain Initialization --------
 def create_genesis_block():
-    # Use datetime to get formatted timestamp
-    timestamp = datetime.now().strftime("%Y-%m-%d")
+    # Use datetime to get formatted timestamp with date, time (HH:MM:SS)
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return Block(0, timestamp, "Genesis Block", "0")
 
 def create_new_block(previous_block, transactions):
-    # Use datetime to get formatted timestamp
-    timestamp = datetime.now().strftime("%Y-%m-%d")
+    # Use datetime to get formatted timestamp with date, time (HH:MM:SS)
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     index = previous_block.index + 1
     return Block(index, timestamp, transactions, previous_block.hash)
 
